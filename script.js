@@ -10,6 +10,8 @@ window.addEventListener('load', function () {
     }, 2000); // 
 });
 
+
+
 // 
 
 // Form Submission

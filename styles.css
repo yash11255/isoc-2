@@ -11,6 +11,9 @@
     align-items: center;
     z-index: 9999;
 }
+
+
+
 /* Hide the toggle button during the loading screen */
 .loading-screen .mode-toggle {
     display: none;
@@ -110,7 +113,7 @@ h1 {
 }
 
 form {
-    display: flex;
+    background-color: rgba(255, 255, 255, 0.7);    display: flex;
     flex-direction: column;
     max-width: 300px;
     margin: 0 auto;
@@ -142,7 +145,8 @@ body, h1, h2, p {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: linear-gradient(to right, red , yellow);
+    background-color: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+    /* background-color: linear-gradient(to right, red , yellow); */
 
 }
 
@@ -153,7 +157,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: linear-gradient(to right, rgb(138, 54, 248) , rgb(30, 188, 245));
+    background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+    /* background-image: linear-gradient(to right, rgb(138, 54, 248) , rgb(30, 188, 245)); */
 
 }
 
@@ -169,18 +174,18 @@ body {
 
 }
 
-/* Form styles similar to Gmail  */
 .form {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: transparent;
+    border: none;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     width: 300px;
     text-align: left;
 }
 
 form {
+    background-color:transparent;
     display: flex;
     flex-direction: column;
 }
@@ -216,6 +221,9 @@ button:hover {
     display: flex;
     align-items: center;
 }
-
-/* Add more specific Gmail-like styling as needed */
+.logo{
+    height: 120px;
+    margin-bottom: 0px;
+    zoom: 180%;
+}
 
