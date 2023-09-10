@@ -37,3 +37,14 @@ styleButton.addEventListener('click', function () {
     styleButton.style.backgroundColor = '#434566'; // Change background color on click
     styleButton.style.color = 'blue';
 });
+// JavaScript to hide the loading screen and display the video background after 2 seconds
+window.addEventListener('load', function () {
+    const loadingScreen = document.querySelector('.loading-screen');
+    const videoBackground = document.querySelector('.video-background');
+
+    // Hide the loading screen after 2 seconds
+    setTimeout(function () {
+        loadingScreen.style.display = 'none';
+        videoBackground.style.display = 'block';
+    }, 2000); // 2000 milliseconds (2 seconds)
+});
