@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <img src="loading.gif" alt="Loading..." class="loading-gif">
+    </div>
+
+    <!-- mode button (moved it outside the loading screen) -->
+    <div class="mode-toggle">
+        <label class="switch">
+            <input type="checkbox" id="mode-switch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <!-- Style Me Button -->
+    <button id="style-button">Style Me</button>
+
+    <div class="container">
+        <div class="header">
+            <img src="gmail-logo.png" alt="Gmail Logo">
+            <h2>Create your College Account</h2>
+        </div>
+        <div class="form">
+            <form action="#">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                <div class="terms">
+                    <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                    <label for="agreeTerms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+
+                <button type="submit">Next</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
